@@ -97,7 +97,8 @@ export default defineComponent({
                               <MonthPanel
                                 ref="monthPanelRef"
                                 onUpdateValue={this.onUpdateValue}
-                                actions={[]}
+                                actions={['confirm']}
+                                onConfirm={this.handleHeaderClick},
                                 // month and year click show month type
                                 type="month"
                                 key="month"
